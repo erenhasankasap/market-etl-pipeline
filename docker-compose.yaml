@@ -1,0 +1,22 @@
+services:
+  etl-app:
+    build: . 
+    depends_on:
+      - postgres
+    environment:
+        POSTGRES_USER: eren 
+        POSTGRES_PASSWORD: 1234
+        POSTGRES_DB: market-data
+  postgres:
+    image: postgres:15
+    environment:
+        POSTGRES_USER: eren 
+        POSTGRES_PASSWORD: 1234
+        POSTGRES_DB: market-data
+    volumes: 
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
+
+
