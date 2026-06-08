@@ -1,0 +1,35 @@
+# --- OS JUNK ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# --- PYTHON ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# --- VIRTUAL ENVIRONMENTS ---
+venv/
+.venv/
+env/
+.env_python/
+
+# --- SECRETS & CONFIG ---
+.env
+.env.local
+*.pem
+secrets.yaml
+
+# --- IDE & EDITORS ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- DOCKER & DB LOCAL DATA ---
+db_data/
+postgres-data/
